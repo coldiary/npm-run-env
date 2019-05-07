@@ -1,0 +1,22 @@
+{
+  "name": "npm-run-env",
+  "version": "0.1.0",
+  "description": "NPM utility to run scripts with NODE_ENV subtitutions",
+  "main": "env.sh",
+  "bin": {
+    "npm-run-env": "./env.sh"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coldiary/npm-run-env.git"
+  },
+  "author": "coldiary",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coldiary/npm-run-env/issues"
+  },
+  "homepage": "https://github.com/coldiary/npm-run-env#readme"
+}
