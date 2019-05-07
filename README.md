@@ -2,7 +2,7 @@
 
 A small NPM script-runner to easily substitute NODE_ENV from npm scripts name
 
-## Installation 
+## Installation
 
 ```sh
 # Install it either globally
@@ -42,7 +42,7 @@ in order to only have to write :
 
 The runner will use the script name prefix if no argument is provided.
 
-Default substitution includes: 
+Default substitution includes:
 - `:dev` -> `NODE_ENV=development`
 - `:prod` -> `NODE_ENV=production`
 - `:local` -> `NODE_ENV=local`
@@ -65,8 +65,7 @@ The runner expect to be used directly in package.json scripts, it won't work if 
 {
   "scripts": {
     "env": "npm-run-env",
-    "serve:dev": "npm run env", // WON'T WORK
+    "serve:dev": "npm run env" // WON'T WORK
   }
 }
 ```
-
