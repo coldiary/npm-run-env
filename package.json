@@ -1,5 +1,5 @@
 {
-  "name": "run-env",
+  "name": "npm-run-env",
   "version": "0.3.0",
   "description": "NPM utility to run scripts with NODE_ENV subtitutions",
   "main": "env.sh",
