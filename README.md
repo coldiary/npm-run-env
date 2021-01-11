@@ -1,4 +1,4 @@
-# npm-run-env
+# run-env
 
 A small NPM script-runner to easily substitute NODE_ENV from npm scripts name
 
@@ -6,10 +6,10 @@ A small NPM script-runner to easily substitute NODE_ENV from npm scripts name
 
 ```sh
 # Install it either globally
-npm i -g npm-run-env
+npm i -g run-env
 
 # Or locally in your project
-npm i --save npm-run-env
+npm i --save run-env
 ```
 
 ## Usage
@@ -33,9 +33,9 @@ in order to only have to write :
 {
   "scripts": {
     "serve": "my-command app/",
-    "serve:dev": "npm-run-env",
-    "serve:prod": "npm-run-env",
-    "serve:custom": "npm-run-env"
+    "serve:dev": "run-env",
+    "serve:prod": "run-env",
+    "serve:custom": "run-env"
   }
 }
 ```
@@ -64,7 +64,7 @@ The runner expect to be used directly in package.json scripts, it won't work if 
 ```
 {
   "scripts": {
-    "env": "npm-run-env",
+    "env": "run-env",
     "serve:dev": "npm run env" // WON'T WORK
   }
 }

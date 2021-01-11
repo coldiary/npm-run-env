@@ -1,10 +1,10 @@
 {
-  "name": "npm-run-env",
-  "version": "0.2.0",
+  "name": "run-env",
+  "version": "0.3.0",
   "description": "NPM utility to run scripts with NODE_ENV subtitutions",
   "main": "env.sh",
   "bin": {
-    "npm-run-env": "./env.sh"
+    "run-env": "./env.sh"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
