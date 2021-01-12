@@ -24,7 +24,6 @@ then
     echo '    }'
     echo '}'
 else
-    echo $command
     if [ -z $command ]
     then
         echo "Error: No command specified"
