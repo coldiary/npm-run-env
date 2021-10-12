@@ -36,27 +36,27 @@ else
             case $env_name in
                 dev)
                     echo "Running $command for environment $dev_sub"
-                    NODE_ENV=$dev_sub && npm run ${@:-$command}
+                    NODE_ENV=$dev_sub npm run ${@:-$command}
                     ;;
                 prod)
                     echo "Running $command for environment $prod_sub"
-                    NODE_ENV=$prod_sub && npm run ${@:-$command}
+                    NODE_ENV=$prod_sub npm run ${@:-$command}
                     ;;
                 preprod)
                     echo "Running $command for environment $preprod_sub"
-                    NODE_ENV=$preprod_sub && npm run ${@:-$command}
+                    NODE_ENV=$preprod_sub npm run ${@:-$command}
                     ;;
                 local)
                     echo "Running $command for environment $local_sub"
-                    NODE_ENV=$local_sub && npm run ${@:-$command}
+                    NODE_ENV=$local_sub npm run ${@:-$command}
                     ;;
                 test)
                     echo "Running $command for environment $test_sub"
-                    NODE_ENV=$test_sub && npm run ${@:-$command}
+                    NODE_ENV=$test_sub npm run ${@:-$command}
                     ;;
                 ci)
                     echo "Running $command for environment $ci_sub"
-                    NODE_ENV=$ci_sub && npm run ${@:-$command}
+                    NODE_ENV=$ci_sub npm run ${@:-$command}
                     ;;
                 *)
                     upper_custom=$(echo $env_name |tr [a-z] [A-Z])
@@ -67,7 +67,7 @@ else
                     else
                         echo "Found custom substitution for $env_name : ${!custom_sub}"
                         echo "Running $command for environment ${!custom_sub}"
-                        NODE_ENV=${!custom_sub} && npm run ${@:-$command}
+                        NODE_ENV=${!custom_sub} npm run ${@:-$command}
                     fi
                     ;;
             esac
